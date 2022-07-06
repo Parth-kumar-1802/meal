@@ -164,13 +164,13 @@
                         </p>
                     </div>
                     <div class="social-links">
-                        <button>
+                        <button id = "fb">
                             <i class="fa-brands fa-facebook-f"></i>
                         </button>
-                        <button>
+                        <button id = "insta">
                             <i class="fa-brands fa-instagram"></i>
                         </button>
-                        <button>
+                        <button id = "twitter">
                             <i class="fa-brands fa-twitter"></i>
                         </button>
                     </div>
@@ -196,13 +196,13 @@
                         </p>
                     </div>
                     <div class="social-links">
-                        <button>
+                        <button id = "fb2">
                             <i class="fa-brands fa-facebook-f"></i>
                         </button>
-                        <button>
+                        <button id = "insta2">
                             <i class="fa-brands fa-instagram"></i>
                         </button>
-                        <button>
+                        <button id = "twitter2">
                             <i class="fa-brands fa-twitter"></i>
                         </button>
                     </div>
@@ -229,7 +229,7 @@
                 <button class="menu-slider-btn">B R U N C H</button>
                 <button class="menu-slider-btn">D I N N E R</button>
             </div>
-            <div class="breakfast-menu">
+            <div class="breakfast-menu active-menu">
                 <div class="dish-card row">
                     <div class="col-sm-3">
                         <img src="assets/images/breakfast1.webp" class=".dish-img">
@@ -294,6 +294,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
 
 
@@ -439,15 +440,63 @@
             <div class="menu-heading ">
                 Customer Reviews
             </div>
-            <div class="customer1">
-                <div class="customer-msg">
-                <p>“The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.”</p>
-                </div>
-                <div class="customer-img">
-                    <img src="assets/images/customer1.jpg" alt="">
-                </div>
-                <div class="customer-name">
-                    Geert Green
+            <div class="review-slider">
+                <div class="slider">
+                    <div class="slider__slides">
+                      <div class="slider__slide active">
+                        <div>
+                            <div class="customer-msg">
+                            <p>“A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.”</p>
+                            </div>
+                            <div class="customer-img">
+                                <img src="assets/images/customer3.jpg" alt="">
+                            </div>
+                            <div class="customer-name">
+                                Maxim Smith
+                            </div>
+                        </div>
+                      </div>
+                      <div class="slider__slide">
+                        <div>
+                            <div class="customer-msg">
+                            <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”</p>
+                            </div>
+                            <div class="customer-img">
+                                <img src="assets/images/customer2.jpg" alt="">
+                            </div>
+                            <div class="customer-name">
+                                Dennis Roman
+                            </div>
+                        </div>
+                      </div>
+                      <div class="slider__slide">
+                        <div>
+                            <div class="customer-msg">
+                            <p>“The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.”</p>
+                            </div>
+                            <div class="customer-img">
+                                <img src="assets/images/customer1.jpg" alt="">
+                            </div>
+                            <div class="customer-name">
+                                Geert Green
+                            </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6" style="text-align: center">
+                            <button id="nav-button--prev" class="slider__nav-button"><i class="fa-solid fa-arrow-left-long"></i></button>
+                        </div>
+                            <div class="col-sm-6" style="text-align: center">
+                        <button id="nav-button--next" class="slider__nav-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                      <div class="slider__navlink active"></div>
+                      <div class="slider__navlink"></div>
+                      <div class="slider__navlink"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -498,7 +547,7 @@
                 <div class="about-us">
                     The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
                 </div>
-                <button class="read-more">READ  MORE</button>
+                <button class="read-more" id="read-more">READ  MORE</button>
             </div>
             <div class="col-sm-4">
                 <h4>Lunch Service</h4>
@@ -509,10 +558,10 @@
             <div class="col-sm-4">
                 <h4>Follow Along</h4>
                 <div class="footer-socials">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <button id="fb3"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button id="insta3"><i class="fa-brands fa-instagram"></i></button>
+                    <button id="twitter3"><i class="fa-brands fa-twitter"></i></button>
+                    <button id="lin"><i class="fa-brands fa-linkedin-in"></i></button>
                 </div>
                 <h4>Newsletter</h4>
                 <form action="">

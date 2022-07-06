@@ -343,8 +343,9 @@ section.the-restaurant{
 
 
 
-
-
+.active-menu{
+    opacity: 1 !important;
+}
 .breakfast-menu{
     padding-top: 10%;
     padding-bottom: 20%;
@@ -452,7 +453,85 @@ section.the-restaurant{
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 7%;
+    position: relative;
 }
+
+
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0.6rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+.slider__slides {
+  width: 100%;
+  padding-top: 35%;
+  padding-bottom: 15%;
+}
+
+.slider__slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-weight: bold;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: 1s;
+    opacity: 0;
+}
+
+.slider__slide.active {
+    opacity: 1;
+}
+
+
+.slider__nav-button {
+    height: 2.4rem;
+    width: 2.4rem;
+    font-size: 28px;
+    color: gray;
+    opacity: 0.8;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.slider__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;s
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 0.72rem;
+    width: 0.72rem;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: 1;
+    margin: 0 0.6rem 0 0.6rem;
+    cursor: pointer;
+}
+
+.slider__navlink.active {
+    background-color: #fff;
+    border: 1px #333 solid;
+}
+
+
 .customer-msg{
     text-align: center;
     font-family: 'Open Sans',Arial, sans-serif;
@@ -564,6 +643,16 @@ footer input{
     padding: 0;
     border: none;
     outline: none;
+}
+.footer-socials button{
+    background: none;
+    border: none;
+    transition: 0.4;
+}
+.footer-socials button:hover{
+    background: none;
+    border: none;
+    color: red;
 }
 .newsletter-btn{
     margin: 0;
