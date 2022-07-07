@@ -335,10 +335,17 @@ section.the-restaurant{
     font-weight: 600;
     font-family: 'Open Sans',Arial, sans-serif;
 }
-.menu-selected{
-    border-color: red;
+.menu-slider-btn-active{
+    background: none;
     color: red;
+    font-size: 16px;
+    border: none;
+    margin: 2%;
+    border-bottom: solid 2px red;
+    font-weight: 600;
+    font-family: 'Open Sans',Arial, sans-serif;
 }
+
 
 
 
@@ -477,7 +484,6 @@ section.the-restaurant{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     font-weight: bold;   
     top: 0;
     left: 0;
