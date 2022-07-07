@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="nav-menu col-sm-1">
-                <button><i class="fa-solid fa-bars"></i></button>
+                <button onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
             </div>
         </nav>
         <div class="opening-banner">
@@ -120,8 +120,8 @@
 
 
 
-        <section class="the-restaurant">
-            <div class="the-restaurant">
+        <section class="the-restaurant" id="aboutRes">
+            <div class="the-restaurant" >
                 <div class="the-restaurant-header">
                         The Restaurant
                 </div>
@@ -220,7 +220,7 @@
             <div class="menu-heading">
                 Menu
             </div>
-            <div class="menu-sub-heading">
+            <div class="menu-sub-heading" id="menuHeading">
                 Checkout our menu with a wide range of dishes.
             </div>
             
@@ -301,7 +301,7 @@
 
 
 
-        <section class="other-services">
+        <section class="other-services" id="otherServices">
             <div class="services">
                 <div class="menu-heading">
                     Other Services
@@ -407,11 +407,11 @@
                     </div>
                     <div class="form-group">
                         <label for="phone-number" class="menu-sub-heading">Phone Number:</label>
-                        <input type="number" class="form-control" id="phone-number">
+                        <input type="number" class="form-control" id="phoneNumber">
                       </div>
                     <div class="form-group">
                       <label for="party-size" class="menu-sub-heading">Party Size:</label>
-                      <input type="number" class="form-control" id="party-size">
+                      <input type="number" class="form-control" id="partySize">
                     </div>
                     <div class="form-group">
                         <label for="date" class="menu-sub-heading">Date:</label>
@@ -422,9 +422,9 @@
                         <input type="time" class="form-control" id="time">
                     </div>
                     <div class="checkbox">
-                      <label class="menu-sub-heading"><input type="checkbox" > Remember me</label>
+                      <label class="menu-sub-heading"><input type="checkbox" id="remMe"> Remember me</label>
                     </div>
-                    <button type="submit" class="btn btn-default" >Submit</button>
+                    <button type="submit" class="btn btn-default" id="resSubmit">Submit</button>
                   </form>
             </div>
         </section>
@@ -435,7 +435,7 @@
 
 
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="menu-heading ">
                 Customer Reviews
             </div>
@@ -507,22 +507,22 @@
 
 
         <section class="contact-us">
-            <div class="contact-us-plate">
+            <div class="contact-us-plate" id="contactUsPlate">
                 <div class="menu-heading pb-8">
                     Get In Touch
                 </div>
                 <form>
                     <div class="form-group">
                         <label for="name" class="menu-sub-heading">Name:</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control" id="contactName">
                       </div>
                     <div class="form-group">
                       <label for="email" class="menu-sub-heading">Email address:</label>
-                      <input type="email" class="form-control" id="email">
+                      <input type="email" class="form-control" id="contactEmail">
                     </div>
                     <div class="form-group">
                         <label for="phone-number" class="menu-sub-heading">Phone Number:</label>
-                        <input type="number" class="form-control" id="phone-number">
+                        <input type="number" class="form-control" id="contactPhoneNumber">
                       </div>
                     <div class="form-group">
                         <label for="msg" class="menu-sub-heading">Message:</label>
@@ -531,7 +531,7 @@
                     <div class="checkbox">
                       <label class="menu-sub-heading"><input type="checkbox"> Remember me</label>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default" id="btnSubmitContact">Submit</button>
                   </form>
             </div>
         </section>
@@ -573,6 +573,21 @@
             Copyright ©2022 All rights reserved | Designed with ❤️ and 🧠 by PARTH.
         </div>
     </footer>
+
+
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#aboutRes" onclick="closeNav()">About</a>
+        <a href="#menuHeading" onclick="closeNav()">Our menu</a>
+        <a href="#otherServices" onclick="closeNav()">Services</a>
+        <a href="#reservation" onclick="closeNav()">Reservations</a>
+        <a href="#reviews" onclick="closeNav()">Clients</a>
+        <a href="#contactUsPlate" onclick="closeNav()">Contact</a>
+      </div>
 
 
 

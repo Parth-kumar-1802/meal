@@ -230,7 +230,57 @@ btnBfst.addEventListener('click', breakfast);
 btnBrunch.addEventListener('click', brunch);
 btnDnr.addEventListener('click', dinner);
 
+//now lets deal with the forms
+//reservation
+
+var btnSubmitRes = document.getElementById('resSubmit');
+function resSubmit(){
+    var resName = document.getElementById('name').value;
+    var resEmail = document.getElementById('email').value;
+    var resPhoneNumber = document.getElementById('phoneNumber').value;
+    var resPartySize = document.getElementById('partySize').value;
+    var resDate = document.getElementById('date').value;
+    var resTime = document.getElementById('time').value;
+
+
+    console.log('Name : '+ resName)
+    console.log('email : ' + resEmail)
+    console.log('phone number : '+ resPhoneNumber)
+    console.log('party size : '+ resPartySize);
+    console.log('date : '+ resDate)
+    console.log('time : '+ resTime);
+}
+btnSubmitRes.addEventListener('click', resSubmit);
+
+
+//contact us form
+
+var btnSubmitContact = document.getElementById('btnSubmitContact');
+function contactUs(){
+    var contactName = document.getElementById('contactName').value;
+    var contactEmail = document.getElementById('contactEmail').value;
+    var contactPhoneNumber = document.getAnimations('contactPhoneNumber').value;
+    var contactMsg = document.getElementById('msg').value;
+
+    console.log('Name : '+ contactName);
+    console.log('email : ' + contactEmail);
+    console.log('phone number : '+ contactPhoneNumber);
+    console.log('message: '+ contactMsg);
+}
+
+btnSubmitContact.addEventListener('click', contactUs);
+
 
 //now we look at the side menu
 
-//now lets deal with the forms
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
